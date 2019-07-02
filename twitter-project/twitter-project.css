@@ -1,0 +1,178 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+#bird{
+    font-size: 40px;
+    color: #28a2ee;
+}
+#left-content{
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: "Prompt";
+}
+#left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 94vh;
+    width: 50%;
+    color: white;
+    background: linear-gradient(to bottom,#28a2ee,#054770) 
+}
+.login-button{
+    height: 33px;
+    width: 60px;
+    margin-left: 10px;
+    border-radius: 15px;
+    border: 1px #28a2ee  solid;
+    background-color: white;
+    color: #28a2ee;
+    font-family: "Prompt";
+    font-size: 12px;
+    font-weight: bold;
+}
+.login-button:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
+#login-form{
+    position: absolute;
+    top:10px;
+}
+.login-inputs{
+    height: 30px;
+    width: 160px;
+    border: lightgray 1px solid;
+    border-radius: 5px;
+    padding-left: 7px;
+}
+.login-inputs:focus{
+    border: #28a2ee 1px solid;
+    outline: none;
+}
+#forget-password:hover{
+    cursor: pointer;
+    border-bottom: 1px lightgrey solid;
+    width:116px;
+
+}
+#login-form-data{
+    display: flex;
+}
+#right-content{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+#right-text-first{
+    
+    font-size: 25px;
+    font-family: "Prompt";
+
+}
+#bird-button{
+    display: flex;
+}
+#bottom-login{
+    margin-left: 220px;
+    height: 35px;
+}
+#right-text-third{
+    padding-top: 40px;
+    font-size: 18px;
+    font-family: "Prompt";
+    font-weight: bold;
+}
+
+#sign-up{
+    margin-top: 15px;
+    height: 35px;
+    width: 350px;
+    border-radius: 20px;
+    border: none;
+    background-color: #28a2ee;
+    color: white;
+    font-family: "Prompt";
+}
+#sign-up:hover{
+    background-color: #054770;
+    cursor: pointer;
+}
+#login{
+    margin-top: 1px;
+    height: 35px;
+    width: 350px;
+    border-radius: 20px;
+    border: solid 1px #28a2ee;
+    background-color: white;
+    font-family: "Prompt";
+    color: #28a2ee;
+}
+#login:hover{
+    background-color: rgb(228, 247, 250);
+    cursor: pointer;
+}
+#right{
+    height: 96vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bottom-div{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 37px;           
+    border-top: 1px lightgray solid;
+    background-color: white;
+}
+
+@media (min-width:1050px) and  (max-width:1200px){
+    
+    #login-form{
+         margin-left: -60px;    
+    }
+    
+}
+@media (min-width:0px) and (max-width:1050px){
+    #login-form{
+        display: none;        
+    }
+    #login-form-data{
+        display: none;
+    }
+
+}
+@media (min-width:1051px)
+{
+    #bottom-login{
+        display:none;
+    }
+}
+@media(max-width:800px) and (min-width:0px) {
+    #main{
+        flex-direction: column-reverse;
+    }
+    #left{
+        width: 100%;
+        height: 47vh;
+    }
+    #right{
+        width: 100%;
+        height: 47vh;
+    }
+}
